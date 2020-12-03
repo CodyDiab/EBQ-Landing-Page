@@ -1,0 +1,201 @@
+/******* LANDING PAGE STYLES  ****************/
+/* universal--------------------- */
+*{
+	/* font-family: 'Roboto', sans-serif; */
+	font-family: 'Open Sans', sans-serif;
+	
+}
+body{
+	margin:0;
+	
+}
+h1 {
+	font-size: 70px;
+
+}
+
+/* top content ----------------------*/
+.top-content{
+	background-color:#eaf2ff;
+	width:100%;
+}
+.logo-wrapper{
+	margin-bottom: -40px;
+
+}
+.logo{
+	max-width: 8%;
+	margin-top:1%;
+	margin-left:2%;
+}
+.main-title{
+	margin-top:-48px;
+	padding-bottom: 5%;
+}
+.main-title-content{
+
+	margin:auto;
+	width:70%;
+
+}
+.title-reg{
+	margin-top:57px;
+	margin-bottom:-18px;
+	font-weight: 200;
+}
+.title-bold{
+	
+	margin-top:-18px;
+	font-weight: 600;
+}
+.title-sub-text{
+	margin-top:-15px;
+	font-size: 1.5em;
+	width:60%;
+}
+/* middle content ------------------*/
+.middle-content-wrapper{
+	background-color: white;
+	height:35%;
+	padding:8% 0 8% 0;
+}
+.sub-content{
+	display:flex;
+	width:70%;
+	margin:auto;
+}
+.sub-text{
+	width:50%;
+}
+.sub-text-bold{
+	width:381px;
+	height:100px; 
+	/* width:79%; */
+	font-size:29px;
+	font-weight: 900;
+	margin-bottom: 34px;
+}
+.sub-text-info{
+	/* width:88%; */
+	width:424px;
+    height:167px; 
+	font-weight: 400;
+	font-size:20px;
+}
+.sub-image{
+	width:50%;
+}
+
+
+/* foot content ------------------------*/
+.footer{
+	color:white;
+	background-color:#334aae ;
+	display:flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	padding:5%;
+}
+.foot-text{
+	margin-bottom:5%;
+	font-size:35px;
+}
+.contact-btn{
+	/* style from scratch rather than bootstrap to keep size minimal */
+	margin:auto;
+	width:19%;
+	color:white;
+	background-color:#354cb3;
+	border:solid;
+	border-width:3px;
+	border-color: white;
+	border-radius: 25px;
+	padding: 10px 20px;
+	text-align: center;
+	font-weight:bolder;
+	font-size:18px;
+	display:inline-block;
+}
+.contact-btn:hover{
+	background-color: #ffc107;
+}
+
+/* Media Queries --- Large Tablet --------- */
+@media only screen and (max-width: 992px) { 
+	body{
+		/* implement grid  */
+		width:100%;
+		display: grid;
+		grid-template-columns: auto ;
+		flex-direction: column;
+		align-items:center;
+		
+	}
+	.logo-wrapper,.main-title{
+		width:100%;
+		margin:auto;
+	}
+	.middle-content-wrapper,.footer{
+		width:100%;
+		margin:0;
+	}
+	.logo{
+		max-width:15%;
+	}
+	.main-title-content{
+		width:90%;
+		margin:auto;
+	}
+	.title-bold{
+		width:100%;
+		margin-left:0;
+	}
+	.title-sub-text{
+		width:80%;
+		height:auto;
+		margin-left:0;
+	}
+	.middle-content-wrapper{
+		height:fit-content;
+	}
+	.sub-content{
+		display:flex;
+		width:100%;
+		height:auto;
+		margin:auto;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.sub-text-bold,.sub-text-info{
+		height:auto;
+		width:100%;
+		
+	}
+	.sub-image{
+		width:80%;
+	}
+
+}
+/* Media Queries --- Med Device ----------- */
+@media only screen and (max-width: 768px) {
+    .sub-text-bold,.sub-text-info{
+        font-size:80%;
+	}
+	.foot-text{
+		font-size:100%;
+	}
+	.contact-btn{
+		font-size: 50%;
+	}
+}
+/* Media Queries --- Mobile --------------- */
+@media only screen and (max-width: 500px) {
+	.logo-wrapper,.main-title{
+		width:100%;
+	}
+	.contact-btn{
+		width:30%;
+		/* font-size:30%; */
+	}
+}
