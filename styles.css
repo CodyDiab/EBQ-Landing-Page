@@ -50,8 +50,10 @@ h1 {
 }
 .title-sub-text{
 	margin-top:-15px;
-	font-size: 1.5em;
-	width:60%;
+	font-size: 29px;
+	width:720px;
+	height:93px;
+	line-height: 1.2em;
 }
 /* middle content ------------------*/
 .middle-content-wrapper{
@@ -70,13 +72,11 @@ h1 {
 .sub-text-bold{
 	width:381px;
 	height:100px; 
-	/* width:79%; */
 	font-size:29px;
 	font-weight: 900;
 	margin-bottom: 34px;
 }
 .sub-text-info{
-	/* width:88%; */
 	width:424px;
     height:167px; 
 	font-weight: 400;
@@ -124,22 +124,20 @@ h1 {
 /* Media Queries --- Large Tablet --------- */
 @media only screen and (max-width: 992px) { 
 	body{
-		/* implement grid  */
+		/* implement single column grid  */
 		width:100%;
 		display: grid;
 		grid-template-columns: auto ;
-		flex-direction: column;
 		align-items:center;
+		margin:0;
 		
 	}
+
 	.logo-wrapper,.main-title{
 		width:100%;
 		margin:auto;
 	}
-	.middle-content-wrapper,.footer{
-		width:100%;
-		margin:0;
-	}
+	
 	.logo{
 		max-width:15%;
 	}
@@ -155,6 +153,10 @@ h1 {
 		width:80%;
 		height:auto;
 		margin-left:0;
+	}
+	.middle-content-wrapper,.footer{
+		width:100%;
+		margin:0;
 	}
 	.middle-content-wrapper{
 		height:fit-content;
@@ -175,10 +177,19 @@ h1 {
 	.sub-image{
 		width:80%;
 	}
+	.footer{
+		padding:0px 0px 40px 0px;
+	}
 
 }
 /* Media Queries --- Med Device ----------- */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
+	.title-reg,.title-bold{
+		font-size: 50px;
+	}
+	.title-sub-text{
+		font-size:18px;
+	}
     .sub-text-bold,.sub-text-info{
         font-size:80%;
 	}
@@ -187,15 +198,24 @@ h1 {
 	}
 	.contact-btn{
 		font-size: 50%;
+		
 	}
 }
 /* Media Queries --- Mobile --------------- */
 @media only screen and (max-width: 500px) {
 	.logo-wrapper,.main-title{
 		width:100%;
+		
+	}
+	.main-title-content{
+		width:100%;
+		padding-left:3%;
+	}
+	.title-reg,.title-bold{
+		font-size: 40px;
 	}
 	.contact-btn{
 		width:30%;
-		/* font-size:30%; */
+		
 	}
 }
