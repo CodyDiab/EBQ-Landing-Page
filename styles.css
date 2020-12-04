@@ -219,3 +219,13 @@ h1 {
 		
 	}
 }
+/* Media Queries --- Mobile Small------------ */
+@media only screen and (max-width: 350px) {
+	.title-reg,.title-bold{
+		font-size: 30px;
+	}
+	.contact-btn{
+		width:40%;
+		
+	}
+}
